@@ -1,0 +1,7 @@
+.mainSection {
+  width: 100%;
+}
+
+.mainSection>section>main {
+  padding-block: 100px;
+}

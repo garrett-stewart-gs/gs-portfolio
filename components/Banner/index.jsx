@@ -7,7 +7,7 @@ export default function Banner() {
     <nav className={styles.bannerContainer}>
       <main className={styles.banner}>
         <div>
-          <Link href="#splash" scroll={true}>
+          <Link href="#hero" scroll={true}>
             Garrett | Web Developer
           </Link>
         </div>
@@ -16,11 +16,11 @@ export default function Banner() {
           <Link href="#about" scroll={true}>
             About
           </Link>
-          <Link href="#experience" scroll={true}>
-            Experience
-          </Link>
           <Link href="#projects" scroll={true}>
             Projects
+          </Link>
+          <Link href="#experience" scroll={true}>
+            Experience
           </Link>
           <Link href="#contact" scroll={true}>
             Contact
