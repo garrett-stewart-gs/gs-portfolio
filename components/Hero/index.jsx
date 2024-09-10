@@ -5,20 +5,27 @@ import GithubIcon from "../icons/GithubIcon";
 import IndeedIcon from "../icons/IndeedIcon";
 import ResumeIcon from "../icons/ResumeIcon";
 
+import TypingText from "./TypingText";
+
 export default function hero() {
+
+
   return (
     <section id="hero" className={styles.heroSectionContainer}>
       <main className={styles.heroSection}>
         <aside>
-          <h1>Hi. I'm Garrett, a Web Developer</h1>
-          <p>I have a knack for solving problems and creating user-friendly applications. My positive attitude and eagerness to learn keep me adaptable and ready for new challenges.</p>
+          <TypingText messageStr={"Hi. I'm Garrett"} headingType={"h1"} />
+
+          <TypingText messageStr={"Full-Stack Web Developer"} headingType={"h2"} />
+
+          <TypingText messageStr={"I Craft Engaging Digital Experiences And Practical Solutions For The Web"} headingType={"h3"} />
         </aside>
 
         <div>
-          <EmailIcon />
+          <ResumeIcon />
           <GithubIcon />
           <IndeedIcon />
-          <ResumeIcon />
+          <EmailIcon />
         </div>
       </main>
     </section>

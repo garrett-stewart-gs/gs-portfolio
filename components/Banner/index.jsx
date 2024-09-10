@@ -8,7 +8,7 @@ export default function Banner() {
       <main className={styles.banner}>
         <div>
           <Link href="#hero" scroll={true}>
-            Garrett | Web Developer
+            Garrett Stewart | Web Developer
           </Link>
         </div>
 
