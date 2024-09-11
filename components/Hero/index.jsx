@@ -14,11 +14,16 @@ export default function hero() {
     <section id="hero" className={styles.heroSectionContainer}>
       <main className={styles.heroSection}>
         <aside>
-          <TypingText messageStr={"Hi. I'm Garrett"} headingType={"h1"} />
 
-          <TypingText messageStr={"Full-Stack Web Developer"} headingType={"h2"} />
+          <div>
+            <TypingText messageStr={"Hi."} headingTypeStr={"h1"} startDelayInt={0} />
+            <TypingText messageStr={"I'm"} headingTypeStr={"h1"} startDelayInt={1000} />
+            <TypingText messageStr={"Garrett"} headingTypeStr={"h1"} startDelayInt={1375} />
+          </div>
 
-          <TypingText messageStr={"I Craft Engaging Digital Experiences And Practical Solutions For The Web"} headingType={"h3"} />
+          <TypingText messageStr={"Full-Stack Web Developer"} headingTypeStr={"h2"} startDelayInt={3000} />
+
+          <TypingText messageStr={"I Craft Engaging Digital Experiences And Practical Solutions For The Web"} headingTypeStr={"h3"} startDelayInt={6000} typingSpeedInt={50} />
         </aside>
 
         <div>
