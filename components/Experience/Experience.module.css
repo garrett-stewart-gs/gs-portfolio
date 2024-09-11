@@ -1,14 +1,85 @@
 .experienceSectionContainer {
   width: 100%;
-  height: 100dvh;
-  max-height: 1000px;
+  min-height: 100dvh;
 }
 
 .experienceSection {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   max-width: 1500px;
   margin-inline: auto;
   border: 1px solid white;
   color: white;
+}
+
+.experienceSection>header {
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 50px;
+}
+
+.experienceSection>article {
+  display: flex;
+  padding: 20px;
+  margin-inline: auto;
+}
+
+.experienceSection>article>* {
+  margin-inline: 50px;
+}
+
+.experienceSection>article:nth-child(odd) {
+  flex-direction: row;
+}
+
+.experienceSection>article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.experienceSection>article>h1 {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  width: 400px;
+}
+
+.experienceSection>article:nth-child(odd)>h1 {
+  justify-content: flex-end;
+}
+
+.experienceSection>article:nth-child(even)>h1 {
+  justify-content: flex-start;
+}
+
+
+.experienceSection>article>div {
+  width: 400px;
+  padding: 20px;
+  border: 3px solid gold;
+  border-radius: 20px;
+}
+
+.experienceSection>article>div>h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding-block: 10px;
+}
+
+.experienceSection>article>div>h3 {
+  font-size: 1.4rem;
+  padding-block: 10px;
+}
+
+.experienceSection>article>div>ul {
+  padding-block: 10px;
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.experienceSection>article>div>ul>li{
+  padding-block: 10px;
+  line-height: 1.5;
 }
